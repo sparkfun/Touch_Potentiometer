@@ -1,0 +1,75 @@
+Partlist
+
+Exported from touch_pot.sch at 6/7/14 7:36 PM
+
+EAGLE Version 5.11.0 Copyright (c) 1988-2010 CadSoft
+
+Part     Value           Device           Package               Library           Sheet
+
+C1       10 uF           CAP_POL1206      EIA3216               SparkFun          1
+C2       10 uF           CAP_POL1206      EIA3216               SparkFun          1
+C3       0.1 uF          C-USSMT0603      C0603                 djd_eagle_library 1
+C4       0.1 uF          C-USSMT0603      C0603                 djd_eagle_library 1
+C5       10 uF           CAP_POL1206      EIA3216               SparkFun          1
+C6       0.1 uF          C-USSMT0603      C0603                 djd_eagle_library 1
+C7       10 uF           CAP_POL1206      EIA3216               SparkFun          1
+C8       0.1 uF          C-USSMT0603      C0603                 djd_eagle_library 1
+CON1     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON2     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON3     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON4     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON5     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON6     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON7     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON8     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON9     SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON10    SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON11    SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON12    SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON13    SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON14    SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON15    SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           djd_eagle_library 1
+CON16    SINGLE_PADSMD_R SINGLE_PADSMD_R  2MM_R_SMD_PAD         djd_eagle_library 1
+CON17    SINGLE_PADSMD_R SINGLE_PADSMD_R  2MM_R_SMD_PAD         djd_eagle_library 1
+CON18    SINGLE_PADSMD_R SINGLE_PADSMD_R  2MM_R_SMD_PAD         djd_eagle_library 1
+D1       APTR3216SECK    LEDREV_32_16     REV_LED_32_16         djd_eagle_library 1
+D2       APTR3216SECK    LEDREV_32_16     REV_LED_32_16         djd_eagle_library 1
+D3       APTR3216SECK    LEDREV_32_16     REV_LED_32_16         djd_eagle_library 1
+D4       APTR3216SECK    LEDREV_32_16     REV_LED_32_16         djd_eagle_library 1
+D5       APTR3216SECK    LEDREV_32_16     REV_LED_32_16         djd_eagle_library 1
+D6       APTR3216SECK    LEDREV_32_16     REV_LED_32_16         djd_eagle_library 1
+D7       APTR3216SECK    LEDREV_32_16     REV_LED_32_16         djd_eagle_library 1
+D8       APTR3216SECK    LEDREV_32_16     REV_LED_32_16         djd_eagle_library 1
+J1                       SJCLOSED         SJ_2S                 djd_eagle_library 1
+J2                       SJCLOSED         SJ_2S                 djd_eagle_library 1
+JP1      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP2      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP3      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP4      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP5      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP6      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP7      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP8      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP9      M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP10     M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP11     M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP12     M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP13     M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP14     M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+JP15     M01SMDNS        M01SMDNS         1X01NS                SparkFun          1
+PB1                      PB_TACT_4SMT     TACT_KPT_1187B        djd_eagle_library 1
+R1       10 kohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R2       100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R3       100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R4       100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R5       100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R6       100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R7       100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R8       100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R9       100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R10      100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+R11      100 ohm         R-USSMT0603      R0603                 djd_eagle_library 1
+TS1                      2CH_LINEAR_TOUCH 2CH_48MM_LINEAR_TOUCH djd_eagle_library 1
+U1       PIC16F1829      PIC16F1829SSOP20 SSOP20                djd_eagle_library 1
+U2       AD5262          AD6262TSSOP      SSOP16                djd_eagle_library 1
+U3       V_REG_LDOSMD    V_REG_LDOSMD     SOT23-5               SparkFun          1
