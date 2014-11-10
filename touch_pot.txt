@@ -1,0 +1,21 @@
+Partlist exported from /Users/joel.bartlett/GitHubRepos/Touch_Potentiometer/Hardware /touch_pot.sch at 9/22/14 3:49 PM
+
+Qty Value           Device           Package               Parts                                                                                          Description          
+1                   2CH_LINEAR_TOUCH 2CH_48MM_LINEAR_TOUCH TS1                                                                                                                 
+1                   PB_TACT_4SMT     TACT_KPT_1187B        PB1                                                                                            Common 4-pin Tact Bu 
+2                   SJCLOSED         SJ_2S                 J1, J2                                                                                         Solder jumper        
+4   0.1 uF          C-USSMT0603      C0603                 C3, C4, C6, C8                                                                                                      
+1   10 kohm         R-USSMT0603      R0603                 R1                                                                                                                  
+4   10 uF           CAP_POL1206      EIA3216               C1, C2, C5, C7                                                                                 Capacitor Polarized  
+10  100 ohm         R-USSMT0603      R0603                 R2, R3, R4, R5, R6, R7, R8, R9, R10, R11                                                                            
+1   AD5262          AD6262TSSOP      SSOP16                U2                                                                                             Analog Devices 2-cha 
+8   APTR3216SECK    LEDREV_32_16     REV_LED_32_16         D1, D2, D3, D4, D5, D6, D7, D8                                                                                      
+4   FIDUCIAL        FIDUCIAL         FIDUCIAL              U$1, U$2, U$3, U$5                                                                                                  
+1   FRAME-LEDGER    FRAME-LEDGER     CREATIVE_COMMONS      FRAME3                                                                                         Schematic Frame      
+15  M01SMDNS        M01SMDNS         1X01NS                JP1, JP2, JP3, JP4, JP5, JP6, JP7, JP8, JP9, JP10, JP11, JP12, JP13, JP14, JP15                Header 1             
+1   OSHW-LOGOM      OSHW-LOGOM       OSHW-LOGO-M           U$4                                                                                            Open Source Hardware 
+1   PIC16F1829      PIC16F1829SSOP20 SSOP20                U1                                                                                                                  
+15  SINGLE_PADSMD   SINGLE_PADSMD    2MM_SMD_PAD           CON1, CON2, CON3, CON4, CON5, CON6, CON7, CON8, CON9, CON10, CON11, CON12, CON13, CON14, CON15                      
+3   SINGLE_PADSMD_R SINGLE_PADSMD_R  2MM_R_SMD_PAD         CON16, CON17, CON18                                                                                                 
+4   STAND-OFFTIGHT  STAND-OFFTIGHT   STAND-OFF-TIGHT       STANDOFF1, STANDOFF2, STANDOFF3, STANDOFF4                                                     #4 Stand Off         
+1   V_REG_LDOSMD    V_REG_LDOSMD     SOT23-5               U3                                                                                             Voltage Regulator LD 
