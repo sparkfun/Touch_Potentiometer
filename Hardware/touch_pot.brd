@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -163,7 +163,7 @@
 <text x="39.751" y="76.073" size="0.889" layer="21" ratio="15" rot="R90">B2</text>
 <text x="42.291" y="76.073" size="0.889" layer="21" ratio="15" rot="R90">V-</text>
 <text x="53.34" y="-16.51" size="1.778" layer="51" font="vector" ratio="10">danjuliodesigns, LLC</text>
-<text x="20.32" y="1.27" size="1.27" layer="1" font="vector" ratio="15" distance="45">V11</text>
+<text x="20.32" y="1.27" size="1.27" layer="1" font="vector" ratio="15" distance="45">V12</text>
 <text x="4.064" y="34.671" size="1.016" layer="21" font="vector" ratio="15">I2C</text>
 <text x="2.032" y="27.94" size="1.016" layer="21" font="vector" ratio="15">Address</text>
 <text x="20.32" y="73.66" size="0.8128" layer="21" font="vector" ratio="15">J1</text>
@@ -184,6 +184,7 @@
 <dimension x1="39.37" y1="68.58" x2="39.37" y2="78.74" x3="-2.54" y3="73.66" textsize="1.778" textratio="15" layer="51" unit="inch"/>
 <dimension x1="5.08" y1="68.58" x2="0" y2="68.58" x3="2.54" y3="80.01" textsize="1.778" textratio="15" layer="51" unit="inch"/>
 <dimension x1="5.08" y1="5.08" x2="39.37" y2="5.08" x3="22.225" y3="83.82" textsize="1.778" textratio="15" layer="51" unit="inch"/>
+<text x="48.26" y="36.83" size="1.778" layer="51" font="vector" ratio="15">The 0.09055118 in. (2.3mm) hole is NPTH hole</text>
 </plain>
 <libraries>
 <library name="djd_eagle_library">
@@ -956,6 +957,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-1.6" y="0.25"/>
 <vertex x="-1.6" y="0.5"/>
 </polygon>
+<wire x1="1.016" y1="1.016" x2="2.7686" y2="1.016" width="0.127" layer="21"/>
+<wire x1="2.7686" y1="1.016" x2="2.7686" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="2.7686" y1="-1.016" x2="1.016" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="2.9972" y1="0" x2="3.3528" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-1.016" x2="-2.7686" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-2.7686" y1="-1.016" x2="-2.7686" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-2.7686" y1="1.016" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-2.9972" y1="0" x2="-3.3528" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="0.1778" x2="-3.175" y2="-0.1778" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1385,7 +1395,7 @@ design rules under a new name.</description>
 <element name="STANDOFF1" library="SparkFun-Electromechanical" package="STAND-OFF-TIGHT" value="STAND-OFFTIGHT" x="39.37" y="68.58"/>
 <element name="TP2" library="SparkFun-Passives" package="PAD.03X.04" value="" x="10.16" y="66.04"/>
 <element name="TP3" library="SparkFun-Passives" package="PAD.03X.04" value="" x="3.81" y="36.83"/>
-<element name="TP1" library="SparkFun-Passives" package="PAD.03X.04" value="" x="8.89" y="64.77"/>
+<element name="TP1" library="SparkFun-Passives" package="PAD.03X.04" value="" x="7.62" y="64.77"/>
 <element name="TP4" library="SparkFun-Passives" package="PAD.03X.04" value="" x="35.56" y="12.7"/>
 <element name="TP5" library="SparkFun-Passives" package="PAD.03X.04" value="" x="5.08" y="12.7"/>
 <element name="U$5" library="SparkFun-Aesthetics" package="SFE-NEW-WEBLOGO" value="SFE_LOGO_NAME_WEB" x="25.4" y="27.94" rot="R90"/>
@@ -1783,12 +1793,12 @@ design rules under a new name.</description>
 <signal name="VPP">
 <contactref element="TP1" pad="P$1"/>
 <wire x1="8.04" y1="62.523" x2="7.325" y2="61.808" width="0.3048" layer="1"/>
-<wire x1="8.04" y1="63.92" x2="8.89" y2="64.77" width="0.3048" layer="1"/>
 <contactref element="R1" pad="1"/>
-<wire x1="8.04" y1="63.92" x2="8.04" y2="62.865" width="0.3048" layer="1"/>
+<wire x1="8.04" y1="64.35" x2="8.04" y2="62.865" width="0.3048" layer="1"/>
 <wire x1="8.04" y1="62.523" x2="8.04" y2="62.865" width="0.3048" layer="1"/>
 <contactref element="U1" pad="4"/>
 <wire x1="7.325" y1="60.775" x2="7.325" y2="61.808" width="0.3048" layer="1"/>
+<wire x1="8.04" y1="64.35" x2="7.62" y2="64.77" width="0.3048" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="CON1" pad="P$1"/>
@@ -2236,27 +2246,27 @@ design rules under a new name.</description>
 <approved hash="3,16,72fe2606267a7282"/>
 <approved hash="3,16,72fe260626ba7242"/>
 <approved hash="19,1,70a8ad2f8c782df7"/>
-<approved hash="5,1,3d8d964fdd8f330b"/>
 <approved hash="19,1,cae7e7a51221e915"/>
+<approved hash="5,1,3d8d964fdd8f330b"/>
 <approved hash="19,1,38faabbe2bb6b8f2"/>
 <approved hash="19,1,22e4069074602c1c"/>
 <approved hash="5,1,4befd1489d89c3c2"/>
-<approved hash="4,1,ffe688c493eceb0f"/>
-<approved hash="4,1,8045885c93f49daa"/>
-<approved hash="4,1,a06c1bc682f7331e"/>
-<approved hash="4,1,900f48c613edce61"/>
-<approved hash="4,1,6f1ff8cb23cab9d1"/>
-<approved hash="4,1,e75c08469df674af"/>
-<approved hash="4,1,4b37783ae20da2b9"/>
 <approved hash="4,1,dbbcd84502821736"/>
-<approved hash="4,1,aef9ddb800007c80"/>
+<approved hash="4,1,4b37783ae20da2b9"/>
+<approved hash="4,1,ffe688c493eceb0f"/>
+<approved hash="4,1,900f48c613edce61"/>
+<approved hash="4,1,8045885c93f49daa"/>
+<approved hash="4,1,6f1ff8cb23cab9d1"/>
+<approved hash="4,1,a06c1bc682f7331e"/>
+<approved hash="4,1,e75c08469df674af"/>
+<approved hash="4,1,b902503b015bee21"/>
 <approved hash="4,1,e1324efb015aa4d0"/>
 <approved hash="4,1,828d8d28994080a8"/>
-<approved hash="4,1,c9711d488860591c"/>
-<approved hash="4,1,15292d877ee035f7"/>
-<approved hash="4,1,b902503b015bee21"/>
-<approved hash="4,1,30a092a6be86114f"/>
+<approved hash="4,1,aef9ddb800007c80"/>
 <approved hash="4,1,dc04da220d460d27"/>
+<approved hash="4,1,15292d877ee035f7"/>
+<approved hash="4,1,30a092a6be86114f"/>
+<approved hash="4,1,c9711d488860591c"/>
 <approved hash="5,1,c0343308a989ae19"/>
 <approved hash="19,16,0aeb75b7c312cc61"/>
 <approved hash="19,16,596e3b9a24f8460c"/>

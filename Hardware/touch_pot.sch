@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -5918,6 +5918,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-1.6" y="0.25"/>
 <vertex x="-1.6" y="0.5"/>
 </polygon>
+<wire x1="1.016" y1="1.016" x2="2.7686" y2="1.016" width="0.127" layer="21"/>
+<wire x1="2.7686" y1="1.016" x2="2.7686" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="2.7686" y1="-1.016" x2="1.016" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="2.9972" y1="0" x2="3.3528" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-1.016" x2="-2.7686" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-2.7686" y1="-1.016" x2="-2.7686" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-2.7686" y1="1.016" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-2.9972" y1="0" x2="-3.3528" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="0.1778" x2="-3.175" y2="-0.1778" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6574,7 +6583,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="304.8" y1="226.06" x2="304.8" y2="274.32" width="0.1524" layer="97"/>
 <wire x1="347.98" y1="226.06" x2="347.98" y2="274.32" width="0.1524" layer="97"/>
 <text x="354.838" y="11.43" size="2.54" layer="94">danjuliodesigns, LLC</text>
-<text x="421.64" y="7.62" size="2.54" layer="94">11</text>
+<text x="421.64" y="7.62" size="2.54" layer="94">12</text>
 <text x="93.98" y="132.715" size="2.54" layer="97">I2C Address Select</text>
 <text x="22.86" y="264.16" size="2.54" layer="97">IO Connections</text>
 <text x="218.44" y="274.32" size="2.54" layer="97">ICSP</text>
@@ -6610,6 +6619,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <wire x1="180.34" y1="218.44" x2="180.34" y2="147.32" width="0.4064" layer="95" style="longdash"/>
 <wire x1="180.34" y1="147.32" x2="269.24" y2="147.32" width="0.4064" layer="95" style="longdash"/>
 <text x="203.2" y="213.36" size="2.54" layer="97">Capacative Sense Pad</text>
+<text x="76.2" y="93.98" size="1.9304" layer="91">There are 64 available I2C addresses. See the Changing I2C Address section of the User Guide, for more info.  </text>
 </plain>
 <instances>
 <instance part="P+1" gate="1" x="127" y="205.74"/>
