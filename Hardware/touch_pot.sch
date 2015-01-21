@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -227,10 +227,6 @@
 </library>
 <library name="djd_eagle_library">
 <packages>
-<package name="FIDUCIAL">
-<circle x="0" y="0" radius="0.3605" width="1.27" layer="29"/>
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-</package>
 <package name="2CH_48MM_LINEAR_TOUCH">
 <smd name="P$1" x="6" y="4.5" dx="1.27" dy="0.635" layer="1" stop="no" thermals="no" cream="no"/>
 <smd name="P$2" x="6" y="43.5" dx="1.27" dy="0.635" layer="1" stop="no" thermals="no" cream="no"/>
@@ -366,11 +362,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="FIDUCIAL">
-<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-</symbol>
 <symbol name="2CH_LINEAR_TOUCH">
 <text x="2.6" y="49.2" size="1.27" layer="95">&gt;NAME</text>
 <pin name="P$1" x="-5.08" y="5.08" visible="off" length="middle"/>
@@ -430,18 +421,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FIDUCIAL">
-<gates>
-<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FIDUCIAL">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="2CH_LINEAR_TOUCH" prefix="TS" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="2CH_LINEAR_TOUCH" x="-7.62" y="-25.4"/>
@@ -5029,6 +5008,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="17.0028" y="0.955"/>
 </polygon>
 </package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="MICRO-FIDUCIAL">
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DOCFIELD">
@@ -5076,6 +5061,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
 <text x="0" y="0" size="1.9304" layer="94">SFE</text>
 </symbol>
+<symbol name="FIDUCIAL">
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-LEDGER" prefix="FRAME">
@@ -5100,6 +5090,25 @@ Standard 11x14 US Ledger frame</description>
 </gates>
 <devices>
 <device name="" package="SFE-NEW-WEBLOGO">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFIDUCIAL" package="MICRO-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6477,7 +6486,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="V+" device=""/>
 <part name="P-1" library="supply1" deviceset="V-" device=""/>
-<part name="U$1" library="djd_eagle_library" deviceset="FIDUCIAL" device=""/>
 <part name="TS1" library="djd_eagle_library" deviceset="2CH_LINEAR_TOUCH" device=""/>
 <part name="CON1" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
 <part name="CON2" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
@@ -6501,8 +6509,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="U$2" library="djd_eagle_library" deviceset="FIDUCIAL" device=""/>
-<part name="U$3" library="djd_eagle_library" deviceset="FIDUCIAL" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="djd_eagle_library" deviceset="SJ" device="CLOSED"/>
@@ -6574,6 +6580,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U3" library="SparkFun-PowerIC" deviceset="V_REG_MIC5205" device="5V" value="5V"/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="PIC16F1829" device=""/>
 <part name="U2" library="SparkFun-AnalogIC" deviceset="AD5262" device=""/>
+<part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -6626,7 +6634,6 @@ For more info, see the Analog IO section of the User Guide</text>
 <instance part="GND1" gate="1" x="127" y="154.94"/>
 <instance part="P+2" gate="1" x="381" y="256.54"/>
 <instance part="P-1" gate="1" x="381" y="220.98"/>
-<instance part="U$1" gate="G$1" x="304.8" y="30.48"/>
 <instance part="TS1" gate="G$1" x="233.68" y="157.48"/>
 <instance part="CON1" gate="G$1" x="43.18" y="251.46" rot="R90"/>
 <instance part="CON2" gate="G$1" x="43.18" y="243.84" rot="R90"/>
@@ -6650,8 +6657,6 @@ For more info, see the Analog IO section of the User Guide</text>
 <instance part="P+4" gate="1" x="307.34" y="180.34"/>
 <instance part="P+5" gate="1" x="228.6" y="134.62"/>
 <instance part="GND5" gate="1" x="401.32" y="223.52"/>
-<instance part="U$2" gate="G$1" x="312.42" y="30.48"/>
-<instance part="U$3" gate="G$1" x="320.04" y="30.48"/>
 <instance part="P+6" gate="1" x="172.72" y="129.54"/>
 <instance part="GND6" gate="1" x="124.46" y="109.22"/>
 <instance part="J1" gate="G$1" x="325.12" y="248.92"/>
@@ -6724,6 +6729,8 @@ For more info, see the Analog IO section of the User Guide</text>
 <instance part="U3" gate="G$1" x="142.24" y="243.84"/>
 <instance part="U1" gate="1" x="127" y="177.8"/>
 <instance part="U2" gate="1" x="360.68" y="170.18"/>
+<instance part="FID1" gate="G$1" x="320.04" y="27.94"/>
+<instance part="FID2" gate="G$1" x="312.42" y="27.94"/>
 </instances>
 <busses>
 </busses>
