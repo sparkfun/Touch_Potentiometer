@@ -6591,7 +6591,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="304.8" y1="226.06" x2="304.8" y2="274.32" width="0.1524" layer="97"/>
 <wire x1="347.98" y1="226.06" x2="347.98" y2="274.32" width="0.1524" layer="97"/>
 <text x="354.838" y="11.43" size="2.54" layer="94">danjuliodesigns, LLC</text>
-<text x="421.64" y="7.62" size="2.54" layer="94">12</text>
+<text x="421.64" y="7.62" size="2.54" layer="94">V13</text>
 <text x="93.98" y="132.715" size="2.54" layer="97">I2C Address Select</text>
 <text x="22.86" y="264.16" size="2.54" layer="97">IO Connections</text>
 <text x="218.44" y="274.32" size="2.54" layer="97">ICSP</text>
