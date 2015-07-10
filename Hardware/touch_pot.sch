@@ -64,6 +64,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -89,6 +91,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -97,6 +100,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
@@ -132,11 +136,19 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
@@ -5930,12 +5942,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.016" y1="1.016" x2="2.7686" y2="1.016" width="0.127" layer="21"/>
 <wire x1="2.7686" y1="1.016" x2="2.7686" y2="-1.016" width="0.127" layer="21"/>
 <wire x1="2.7686" y1="-1.016" x2="1.016" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="2.9972" y1="0" x2="3.3528" y2="0" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0" x2="3.3528" y2="0" width="0.127" layer="21"/>
 <wire x1="-1.016" y1="-1.016" x2="-2.7686" y2="-1.016" width="0.127" layer="21"/>
 <wire x1="-2.7686" y1="-1.016" x2="-2.7686" y2="1.016" width="0.127" layer="21"/>
 <wire x1="-2.7686" y1="1.016" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
-<wire x1="-2.9972" y1="0" x2="-3.3528" y2="0" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="0.1778" x2="-3.175" y2="-0.1778" width="0.127" layer="21"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-3.175" y1="0" x2="-3.81" y2="0" width="0.254" layer="21"/>
+<wire x1="-3.48741875" y1="-0.368296875" x2="-3.48741875" y2="0.3556" width="0.254" layer="21"/>
+<wire x1="3.175" y1="0" x2="3.81" y2="0" width="0.254" layer="21"/>
+<wire x1="-3.489959375" y1="0.37591875" x2="-3.48741875" y2="0.373378125" width="0.254" layer="21"/>
+<wire x1="-3.48741875" y1="0.373378125" x2="-3.48741875" y2="-0.370840625" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6355,7 +6372,9 @@ package type SS</description>
 <connect gate="1" pin="VSS" pad="20"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12357" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6465,7 +6484,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="1" pin="W2" pad="15"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12358" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6487,28 +6508,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+2" library="supply1" deviceset="V+" device=""/>
 <part name="P-1" library="supply1" deviceset="V-" device=""/>
 <part name="TS1" library="djd_eagle_library" deviceset="2CH_LINEAR_TOUCH" device=""/>
-<part name="CON1" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON2" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON3" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON4" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON5" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON6" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON7" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON8" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON9" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON10" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON11" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON12" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON13" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON14" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
-<part name="CON15" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP6" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP7" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP8" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP9" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP10" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP11" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP12" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP13" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP14" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP15" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP16" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP17" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP18" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP19" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
+<part name="TP20" library="djd_eagle_library" deviceset="SINGLE_PAD" device="SMD" value=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="djd_eagle_library" deviceset="SJ" device="CLOSED"/>
@@ -6582,6 +6602,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U2" library="SparkFun-AnalogIC" deviceset="AD5262" device=""/>
 <part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6605,15 +6626,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="17.78" y="132.08" size="1.778" layer="97">Through Hole</text>
 <text x="40.64" y="132.08" size="1.778" layer="97">SMD Pads</text>
 <text x="354.838" y="6.35" size="2.54" layer="94">Joel Bartlett</text>
-<wire x1="0" y1="91.44" x2="73.66" y2="91.44" width="0.508" layer="95" style="longdash"/>
-<wire x1="73.66" y1="91.44" x2="269.24" y2="91.44" width="0.508" layer="95" style="longdash"/>
-<wire x1="269.24" y1="91.44" x2="431.8" y2="91.44" width="0.508" layer="95" style="longdash"/>
-<wire x1="73.66" y1="91.44" x2="73.66" y2="279.4" width="0.508" layer="95" style="longdash"/>
-<wire x1="269.24" y1="91.44" x2="269.24" y2="147.32" width="0.508" layer="95" style="longdash"/>
-<wire x1="269.24" y1="147.32" x2="269.24" y2="218.44" width="0.508" layer="95" style="longdash"/>
-<wire x1="269.24" y1="218.44" x2="269.24" y2="279.4" width="0.508" layer="95" style="longdash"/>
-<wire x1="180.34" y1="279.4" x2="180.34" y2="218.44" width="0.508" layer="95" style="longdash"/>
-<wire x1="180.34" y1="218.44" x2="269.24" y2="218.44" width="0.508" layer="95" style="longdash"/>
+<wire x1="0" y1="91.44" x2="73.66" y2="91.44" width="0.508" layer="97" style="longdash"/>
+<wire x1="73.66" y1="91.44" x2="269.24" y2="91.44" width="0.508" layer="97" style="longdash"/>
+<wire x1="269.24" y1="91.44" x2="431.8" y2="91.44" width="0.508" layer="97" style="longdash"/>
+<wire x1="73.66" y1="91.44" x2="73.66" y2="279.4" width="0.508" layer="97" style="longdash"/>
+<wire x1="269.24" y1="91.44" x2="269.24" y2="147.32" width="0.508" layer="97" style="longdash"/>
+<wire x1="269.24" y1="147.32" x2="269.24" y2="218.44" width="0.508" layer="97" style="longdash"/>
+<wire x1="269.24" y1="218.44" x2="269.24" y2="279.4" width="0.508" layer="97" style="longdash"/>
+<wire x1="180.34" y1="279.4" x2="180.34" y2="218.44" width="0.508" layer="97" style="longdash"/>
+<wire x1="180.34" y1="218.44" x2="269.24" y2="218.44" width="0.508" layer="97" style="longdash"/>
 <text x="363.22" y="271.78" size="2.54" layer="97">Analog IC</text>
 <text x="99.06" y="266.7" size="2.54" layer="95">Vin = 5-12V</text>
 <text x="86.36" y="99.06" size="2.54" layer="95">DEFAULT I2C ADDRESS: 0x08</text>
@@ -6625,39 +6646,38 @@ Dual-ended: Min = +/-4.5V, Max = +/-5.5V
 For more info, see the Electrical Specifications section of the User Guide
 The maximum voltage potential between V- and V+ is 15 volts. V- maximum is -5V. V+ maximum is 15V.
 For more info, see the Analog IO section of the User Guide</text>
-<wire x1="180.34" y1="218.44" x2="180.34" y2="147.32" width="0.4064" layer="95" style="longdash"/>
-<wire x1="180.34" y1="147.32" x2="269.24" y2="147.32" width="0.4064" layer="95" style="longdash"/>
+<wire x1="180.34" y1="218.44" x2="180.34" y2="147.32" width="0.4064" layer="97" style="longdash"/>
+<wire x1="180.34" y1="147.32" x2="269.24" y2="147.32" width="0.4064" layer="97" style="longdash"/>
 <text x="203.2" y="213.36" size="2.54" layer="97">Capacative Sense Pad</text>
 <text x="76.2" y="93.98" size="1.9304" layer="91">There are 64 available I2C addresses. See the Changing I2C Address section of the User Guide, for more info.  </text>
 </plain>
 <instances>
 <instance part="P+1" gate="1" x="127" y="205.74"/>
 <instance part="GND1" gate="1" x="127" y="154.94"/>
-<instance part="P+2" gate="1" x="381" y="256.54"/>
-<instance part="P-1" gate="1" x="381" y="220.98"/>
+<instance part="P+2" gate="1" x="388.62" y="266.7"/>
+<instance part="P-1" gate="1" x="388.62" y="228.6"/>
 <instance part="TS1" gate="G$1" x="233.68" y="157.48"/>
-<instance part="CON1" gate="G$1" x="43.18" y="251.46" rot="R90"/>
-<instance part="CON2" gate="G$1" x="43.18" y="243.84" rot="R90"/>
-<instance part="CON3" gate="G$1" x="43.18" y="236.22" rot="R90"/>
-<instance part="CON4" gate="G$1" x="43.18" y="228.6" rot="R90"/>
-<instance part="CON5" gate="G$1" x="43.18" y="220.98" rot="R90"/>
-<instance part="CON6" gate="G$1" x="43.18" y="213.36" rot="R90"/>
-<instance part="CON7" gate="G$1" x="43.18" y="205.74" rot="R90"/>
-<instance part="CON8" gate="G$1" x="43.18" y="198.12" rot="R90"/>
-<instance part="CON9" gate="G$1" x="43.18" y="190.5" rot="R90"/>
-<instance part="CON10" gate="G$1" x="43.18" y="182.88" rot="R90"/>
-<instance part="CON11" gate="G$1" x="43.18" y="175.26" rot="R90"/>
-<instance part="CON12" gate="G$1" x="43.18" y="167.64" rot="R90"/>
-<instance part="CON13" gate="G$1" x="43.18" y="160.02" rot="R90"/>
-<instance part="CON14" gate="G$1" x="43.18" y="152.4" rot="R90"/>
-<instance part="CON15" gate="G$1" x="43.18" y="144.78" rot="R90"/>
+<instance part="TP6" gate="G$1" x="43.18" y="251.46" rot="R90"/>
+<instance part="TP7" gate="G$1" x="43.18" y="243.84" rot="R90"/>
+<instance part="TP8" gate="G$1" x="43.18" y="236.22" rot="R90"/>
+<instance part="TP9" gate="G$1" x="43.18" y="228.6" rot="R90"/>
+<instance part="TP10" gate="G$1" x="43.18" y="220.98" rot="R90"/>
+<instance part="TP11" gate="G$1" x="43.18" y="213.36" rot="R90"/>
+<instance part="TP12" gate="G$1" x="43.18" y="205.74" rot="R90"/>
+<instance part="TP13" gate="G$1" x="43.18" y="198.12" rot="R90"/>
+<instance part="TP14" gate="G$1" x="43.18" y="190.5" rot="R90"/>
+<instance part="TP15" gate="G$1" x="43.18" y="182.88" rot="R90"/>
+<instance part="TP16" gate="G$1" x="43.18" y="175.26" rot="R90"/>
+<instance part="TP17" gate="G$1" x="43.18" y="167.64" rot="R90"/>
+<instance part="TP18" gate="G$1" x="43.18" y="160.02" rot="R90"/>
+<instance part="TP19" gate="G$1" x="43.18" y="152.4" rot="R90"/>
+<instance part="TP20" gate="G$1" x="43.18" y="144.78" rot="R90"/>
 <instance part="P+3" gate="1" x="160.02" y="256.54"/>
 <instance part="GND2" gate="1" x="160.02" y="231.14"/>
 <instance part="GND3" gate="1" x="307.34" y="162.56"/>
 <instance part="GND4" gate="1" x="228.6" y="116.84"/>
 <instance part="P+4" gate="1" x="307.34" y="180.34"/>
 <instance part="P+5" gate="1" x="228.6" y="134.62"/>
-<instance part="GND5" gate="1" x="401.32" y="223.52"/>
 <instance part="P+6" gate="1" x="172.72" y="129.54"/>
 <instance part="GND6" gate="1" x="124.46" y="109.22"/>
 <instance part="J1" gate="G$1" x="325.12" y="248.92"/>
@@ -6715,12 +6735,12 @@ For more info, see the Analog IO section of the User Guide</text>
 <instance part="D6" gate="G$1" x="200.66" y="43.18"/>
 <instance part="D7" gate="G$1" x="210.82" y="43.18"/>
 <instance part="D8" gate="G$1" x="220.98" y="43.18"/>
-<instance part="C5" gate="G$1" x="373.38" y="246.38"/>
-<instance part="C7" gate="G$1" x="373.38" y="233.68"/>
+<instance part="C5" gate="G$1" x="381" y="256.54"/>
+<instance part="C7" gate="G$1" x="381" y="241.3"/>
 <instance part="R2" gate="G$1" x="220.98" y="200.66" rot="R180"/>
 <instance part="R3" gate="G$1" x="220.98" y="162.56" rot="R180"/>
-<instance part="C6" gate="G$1" x="388.62" y="243.84"/>
-<instance part="C8" gate="G$1" x="388.62" y="231.14"/>
+<instance part="C6" gate="G$1" x="396.24" y="254"/>
+<instance part="C8" gate="G$1" x="396.24" y="238.76"/>
 <instance part="C4" gate="G$1" x="307.34" y="170.18"/>
 <instance part="C3" gate="G$1" x="228.6" y="124.46"/>
 <instance part="R1" gate="G$1" x="160.02" y="119.38"/>
@@ -6732,6 +6752,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <instance part="U2" gate="1" x="360.68" y="170.18"/>
 <instance part="FID1" gate="G$1" x="320.04" y="27.94"/>
 <instance part="FID2" gate="G$1" x="312.42" y="27.94"/>
+<instance part="GND12" gate="1" x="388.62" y="243.84"/>
 </instances>
 <busses>
 </busses>
@@ -6740,17 +6761,17 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="142.24" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="CON15" gate="G$1" pin="P$1"/>
+<pinref part="TP20" gate="G$1" pin="P$1"/>
 <pinref part="JP15" gate="G$1" pin="1"/>
 <label x="50.8" y="142.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="373.38" y1="248.92" x2="373.38" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="251.46" x2="381" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="381" y1="251.46" x2="381" y2="254" width="0.1524" layer="91"/>
-<wire x1="381" y1="251.46" x2="388.62" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="251.46" x2="388.62" y2="248.92" width="0.1524" layer="91"/>
-<junction x="381" y="251.46"/>
+<wire x1="381" y1="259.08" x2="381" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="381" y1="261.62" x2="388.62" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="261.62" x2="388.62" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="261.62" x2="396.24" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="261.62" x2="396.24" y2="259.08" width="0.1524" layer="91"/>
+<junction x="388.62" y="261.62"/>
 <pinref part="P+2" gate="1" pin="V+"/>
 <pinref part="C5" gate="G$1" pin="+"/>
 <pinref part="C6" gate="G$1" pin="1"/>
@@ -6776,7 +6797,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="165.1" x2="50.8" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="165.1" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="CON12" gate="G$1" pin="P$1"/>
+<pinref part="TP17" gate="G$1" pin="P$1"/>
 <pinref part="JP12" gate="G$1" pin="1"/>
 <label x="50.8" y="165.1" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6785,7 +6806,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="CON13" gate="G$1" pin="P$1"/>
+<pinref part="TP18" gate="G$1" pin="P$1"/>
 <pinref part="JP13" gate="G$1" pin="1"/>
 <label x="50.8" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6804,7 +6825,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="149.86" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="CON14" gate="G$1" pin="P$1"/>
+<pinref part="TP19" gate="G$1" pin="P$1"/>
 <pinref part="JP14" gate="G$1" pin="1"/>
 <label x="50.8" y="149.86" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6813,7 +6834,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="172.72" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="172.72" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="CON11" gate="G$1" pin="P$1"/>
+<pinref part="TP16" gate="G$1" pin="P$1"/>
 <pinref part="JP11" gate="G$1" pin="1"/>
 <label x="50.8" y="172.72" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6827,7 +6848,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="180.34" x2="50.8" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="180.34" x2="43.18" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="CON10" gate="G$1" pin="P$1"/>
+<pinref part="TP15" gate="G$1" pin="P$1"/>
 <pinref part="JP10" gate="G$1" pin="1"/>
 <label x="50.8" y="180.34" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6841,7 +6862,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="187.96" x2="50.8" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="187.96" x2="43.18" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="CON9" gate="G$1" pin="P$1"/>
+<pinref part="TP14" gate="G$1" pin="P$1"/>
 <pinref part="JP9" gate="G$1" pin="1"/>
 <label x="50.8" y="187.96" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -6855,17 +6876,17 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="195.58" x2="50.8" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="195.58" x2="43.18" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="CON8" gate="G$1" pin="P$1"/>
+<pinref part="TP13" gate="G$1" pin="P$1"/>
 <pinref part="JP8" gate="G$1" pin="1"/>
 <label x="50.8" y="195.58" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="373.38" y1="228.6" x2="373.38" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="226.06" x2="381" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="381" y1="226.06" x2="381" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="381" y1="226.06" x2="388.62" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="226.06" x2="388.62" y2="228.6" width="0.1524" layer="91"/>
-<junction x="381" y="226.06"/>
+<wire x1="381" y1="236.22" x2="381" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="381" y1="233.68" x2="388.62" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="233.68" x2="388.62" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="233.68" x2="396.24" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="233.68" x2="396.24" y2="236.22" width="0.1524" layer="91"/>
+<junction x="388.62" y="233.68"/>
 <pinref part="P-1" gate="1" pin="V-"/>
 <pinref part="C7" gate="G$1" pin="-"/>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -6886,7 +6907,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="203.2" x2="60.96" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="203.2" x2="43.18" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="CON7" gate="G$1" pin="P$1"/>
+<pinref part="TP12" gate="G$1" pin="P$1"/>
 <pinref part="JP7" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
@@ -6911,20 +6932,21 @@ For more info, see the Analog IO section of the User Guide</text>
 <pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="373.38" y1="241.3" x2="373.38" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="238.76" x2="373.38" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="241.3" x2="388.62" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="238.76" x2="388.62" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="238.76" x2="388.62" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="238.76" x2="401.32" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="401.32" y1="238.76" x2="401.32" y2="226.06" width="0.1524" layer="91"/>
-<junction x="373.38" y="238.76"/>
-<junction x="388.62" y="238.76"/>
-<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="381" y1="251.46" x2="381" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="381" y1="248.92" x2="381" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="251.46" x2="396.24" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="248.92" x2="396.24" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="381" y1="248.92" x2="388.62" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="248.92" x2="396.24" y2="248.92" width="0.1524" layer="91"/>
+<junction x="381" y="248.92"/>
+<junction x="396.24" y="248.92"/>
 <pinref part="C5" gate="G$1" pin="-"/>
 <pinref part="C7" gate="G$1" pin="+"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="388.62" y1="248.92" x2="388.62" y2="246.38" width="0.1524" layer="91"/>
+<junction x="388.62" y="248.92"/>
 </segment>
 <segment>
 <wire x1="375.92" y1="162.56" x2="393.7" y2="162.56" width="0.1524" layer="91"/>
@@ -6973,7 +6995,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="210.82" x2="50.8" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="210.82" x2="43.18" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="CON6" gate="G$1" pin="P$1"/>
+<pinref part="TP11" gate="G$1" pin="P$1"/>
 <pinref part="JP6" gate="G$1" pin="1"/>
 <label x="50.8" y="210.82" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -7038,7 +7060,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="248.92" x2="50.8" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="248.92" x2="43.18" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="CON1" gate="G$1" pin="P$1"/>
+<pinref part="TP6" gate="G$1" pin="P$1"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <label x="50.8" y="248.92" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -7052,7 +7074,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="241.3" x2="50.8" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="241.3" x2="43.18" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="CON2" gate="G$1" pin="P$1"/>
+<pinref part="TP7" gate="G$1" pin="P$1"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <label x="50.8" y="241.3" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -7066,7 +7088,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="233.68" x2="50.8" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="233.68" x2="43.18" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="CON3" gate="G$1" pin="P$1"/>
+<pinref part="TP8" gate="G$1" pin="P$1"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <label x="50.8" y="233.68" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -7080,7 +7102,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="218.44" x2="50.8" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="218.44" x2="43.18" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="CON5" gate="G$1" pin="P$1"/>
+<pinref part="TP10" gate="G$1" pin="P$1"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <label x="50.8" y="218.44" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -7094,7 +7116,7 @@ For more info, see the Analog IO section of the User Guide</text>
 <segment>
 <wire x1="43.18" y1="226.06" x2="50.8" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="226.06" x2="43.18" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="CON4" gate="G$1" pin="P$1"/>
+<pinref part="TP9" gate="G$1" pin="P$1"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
 <label x="50.8" y="226.06" size="1.778" layer="95" xref="yes"/>
 </segment>
