@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4935,9 +4935,6 @@ design rules under a new name.</description>
 <signal name="N$9">
 <wire x1="14.478" y1="40.513" x2="9.398" y2="40.513" width="0.254" layer="1"/>
 </signal>
-<signal name="N$10">
-<wire x1="6.858" y1="84.328" x2="6.858" y2="85.598" width="0.2032" layer="16"/>
-</signal>
 <signal name="V+1">
 <contactref element="TP35" pad="P$1"/>
 <contactref element="J3" pad="2"/>
@@ -5680,9 +5677,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$21">
 <wire x1="59.436" y1="40.513" x2="54.356" y2="40.513" width="0.254" layer="1"/>
-</signal>
-<signal name="N$22">
-<wire x1="51.816" y1="84.328" x2="51.816" y2="85.598" width="0.2032" layer="16"/>
 </signal>
 <signal name="V+2">
 <contactref element="TP55" pad="P$1"/>
@@ -6427,9 +6421,6 @@ design rules under a new name.</description>
 <signal name="N$33">
 <wire x1="104.394" y1="40.513" x2="99.314" y2="40.513" width="0.254" layer="1"/>
 </signal>
-<signal name="N$34">
-<wire x1="96.774" y1="84.328" x2="96.774" y2="85.598" width="0.2032" layer="16"/>
-</signal>
 <signal name="V+3">
 <contactref element="TP75" pad="P$1"/>
 <contactref element="J7" pad="2"/>
@@ -7172,9 +7163,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$47">
 <wire x1="14.478" y1="119.761" x2="9.398" y2="119.761" width="0.254" layer="1"/>
-</signal>
-<signal name="N$48">
-<wire x1="6.858" y1="163.576" x2="6.858" y2="164.846" width="0.2032" layer="16"/>
 </signal>
 <signal name="V+4">
 <contactref element="TP95" pad="P$1"/>
@@ -7919,9 +7907,6 @@ design rules under a new name.</description>
 <signal name="N$59">
 <wire x1="59.436" y1="119.761" x2="54.356" y2="119.761" width="0.254" layer="1"/>
 </signal>
-<signal name="N$60">
-<wire x1="51.816" y1="163.576" x2="51.816" y2="164.846" width="0.2032" layer="16"/>
-</signal>
 <signal name="V+5">
 <contactref element="TP115" pad="P$1"/>
 <contactref element="J11" pad="2"/>
@@ -8664,9 +8649,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$71">
 <wire x1="104.394" y1="119.761" x2="99.314" y2="119.761" width="0.254" layer="1"/>
-</signal>
-<signal name="N$72">
-<wire x1="96.774" y1="163.576" x2="96.774" y2="164.846" width="0.2032" layer="16"/>
 </signal>
 <signal name="V+6">
 <contactref element="TP135" pad="P$1"/>
@@ -9411,9 +9393,6 @@ design rules under a new name.</description>
 <signal name="N$83">
 <wire x1="149.352" y1="40.513" x2="144.272" y2="40.513" width="0.254" layer="1"/>
 </signal>
-<signal name="N$84">
-<wire x1="141.732" y1="84.328" x2="141.732" y2="85.598" width="0.2032" layer="16"/>
-</signal>
 <signal name="V+7">
 <contactref element="TP155" pad="P$1"/>
 <contactref element="J15" pad="2"/>
@@ -10156,9 +10135,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$95">
 <wire x1="194.31" y1="40.513" x2="189.23" y2="40.513" width="0.254" layer="1"/>
-</signal>
-<signal name="N$96">
-<wire x1="186.69" y1="84.328" x2="186.69" y2="85.598" width="0.2032" layer="16"/>
 </signal>
 <signal name="V+8">
 <contactref element="TP175" pad="P$1"/>
@@ -10903,9 +10879,6 @@ design rules under a new name.</description>
 <signal name="N$107">
 <wire x1="239.268" y1="40.513" x2="234.188" y2="40.513" width="0.254" layer="1"/>
 </signal>
-<signal name="N$108">
-<wire x1="231.648" y1="84.328" x2="231.648" y2="85.598" width="0.2032" layer="16"/>
-</signal>
 <signal name="V+9">
 <contactref element="TP195" pad="P$1"/>
 <contactref element="J19" pad="2"/>
@@ -11648,9 +11621,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$119">
 <wire x1="149.352" y1="119.761" x2="144.272" y2="119.761" width="0.254" layer="1"/>
-</signal>
-<signal name="N$120">
-<wire x1="141.732" y1="163.576" x2="141.732" y2="164.846" width="0.2032" layer="16"/>
 </signal>
 <signal name="V+10">
 <contactref element="TP215" pad="P$1"/>
@@ -12395,9 +12365,6 @@ design rules under a new name.</description>
 <signal name="N$131">
 <wire x1="194.31" y1="119.761" x2="189.23" y2="119.761" width="0.254" layer="1"/>
 </signal>
-<signal name="N$132">
-<wire x1="186.69" y1="163.576" x2="186.69" y2="164.846" width="0.2032" layer="16"/>
-</signal>
 <signal name="V+11">
 <contactref element="TP235" pad="P$1"/>
 <contactref element="J23" pad="2"/>
@@ -13140,9 +13107,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$143">
 <wire x1="239.268" y1="119.761" x2="234.188" y2="119.761" width="0.254" layer="1"/>
-</signal>
-<signal name="N$144">
-<wire x1="231.648" y1="163.576" x2="231.648" y2="164.846" width="0.2032" layer="16"/>
 </signal>
 </signals>
 <errors>
